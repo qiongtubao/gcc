@@ -1,0 +1,9 @@
+[submodule "deps/mpfr"]
+	path = deps/mpfr
+	url = https://github.com/qiongtubao/mpfr.git
+[submodule "deps/mpc"]
+	path = deps/mpc
+	url = https://github.com/qiongtubao/mpc.git
+[submodule "deps/gmp"]
+	path = deps/gmp
+	url = https://github.com/qiongtubao/gmp.git
