@@ -45,7 +45,7 @@ mpfr: ./mpfr/latte/install/lib/libmpfr.a
 
 ./mpc/latte/install/lib/libmpc.a: mpfr
 	mkdir -p ./mpc/latte/install ./mpc/latte/build
-	cd ./mpc/latte/build && ../../configure --prefix=$(DEPS_PATH)/mpc/latte/install --with-gmp=$(DEPS_PATH)/gmp/latte/install --with-mpfr=$(DEPS_PATH)/mpfr/latte/install 
+	cd ./mpc/latte/build && ../../configure --prefix=$(DEPS_PATH)/mpc/latte/install --with-gmp=$(DEPS_PATH)/gmp/latte/install --with-mpfr=$(DEPS_PATH)/mpfr/latte/install && make && make install
 
 mpc: ./mpc/latte/install/lib/libmpc.a
 	echo "build mpc"	
